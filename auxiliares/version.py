@@ -16,6 +16,7 @@
 
 # Historial
 # 09-07-2025: Se define menú principal
+# 14.07.2025: Actualizando el acceso a los menús v1.1.0
 
 # En AUXILIARES guardamos información que no cambiamos habitualmente.
-version_actual = "1.0.0"
+version_actual = "1.1.0"

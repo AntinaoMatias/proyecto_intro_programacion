@@ -4,7 +4,4 @@
 
 
 
-
-
-
 asignaturas = ["Química", "Biología", "Matemáticas"]

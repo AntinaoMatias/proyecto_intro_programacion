@@ -8,7 +8,8 @@
 # PATCH: Correcciones en el código o mejoras de código
 
 # Ejemplo de cambio de versión:
-# versión: 0.0.0
+# versión: 1.0.0
+
 # Si el cambio es MAJOR cambiamos el primer número, quedando 1.0.0
 # Si el cambio es MINOR cambiamos el segundo número, quedando 0.1.0
 # Si el cambio es PATCH cambiamos el tercer número, quedando 0.0.1
@@ -16,5 +17,5 @@
 # Historial
 # 09-07-2025: Se define menú principal
 
-
+# En AUXILIARES guardamos información que no cambiamos habitualmente.
 version_actual = "1.0.0"

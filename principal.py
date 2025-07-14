@@ -1,28 +1,18 @@
 # Importaciones
 
-# Importamos la versión del programa
+# Importamos datos 
 from auxiliares.version import version_actual
-
-#Importamos lista asignaturas
 from datos.asignaturas import asignaturas
+from negocio.negocio_menu import mostrar_menu
 
-
-# Módulo que muestra el menú principal
-
-def menu_principal():
+def programa_principal():
     print("===========================")
     print(f"Aplicación Gestion de Notas v.{version_actual}")
 
     while True:
-        print("===========================")
-        print("[1] Gestión Asignaturas")
-        print("[2] Gestión Docentes")
-        print("[3] Gestión Estudiantes")
-        print("[4] Gestión Notas")
-        print("[0] Salir")
-        print("===========================")
+        mostrar_menu()
         opcion = input("Selecciona una opción: ")
-        mensaje = ""
+
         if opcion == "1":
             print()
             contador = 1
@@ -48,6 +38,8 @@ def menu_principal():
             print()
             break
         else:
+            print()
             print("El valor ingresado no corresponde.")
+            print()
 
-menu_principal()
+programa_principal()

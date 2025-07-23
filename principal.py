@@ -1,45 +1,47 @@
-# Importaciones
-
-# Importamos datos 
 from auxiliares.version import version_actual
 from datos.asignaturas import asignaturas
-from negocio.negocio_menu import mostrar_menu
+from negocio.negocio_menu import menu_principal, menu_asignaturas
+from negocio.negocio_asignaturas import listado_asignaturas, agregar_asignatura, modificar_asignatura, eliminar_asignatura
+
 
 def programa_principal():
-    print("===========================")
-    print(f"Aplicación Gestion de Notas v.{version_actual}")
+    print()
+    print(f'Aplicación Gestión de Notas v.{version_actual}')
+    print('===========================')
 
     while True:
-        mostrar_menu()
-        opcion = input("Selecciona una opción: ")
-
-        if opcion == "1":
-            print()
-            contador = 1
-            for asignatura in asignaturas:
-                print(f"{contador}. {asignatura}")
-                contador += 1
-            print()
-        elif opcion == "2":
-            print()
-            print("Usted ha seleccionado la opción 2")
-            print()
-        elif opcion == "3":
-            print()
-            print("Usted ha seleccionado la opción 3")
-            print()
-        elif opcion == "4":
-            print()
-            print("Usted ha seleccionado la opción 4")
-            print()
-        elif opcion == "0":
-            print()
-            print("Saliendo del programa...")
-            print()
+        menu_principal()
+        opcion = input('Seleccione su opción: ')
+        print()
+        if opcion == '1':
+            while True:
+                menu_asignaturas()
+                opcion_asignaturas = input('Seleccione su opción: ')
+                print()
+                if opcion_asignaturas == '1':
+                    listado_asignaturas()
+                elif opcion_asignaturas == '2':
+                    agregar_asignatura()
+                elif opcion_asignaturas == '3':
+                    modificar_asignatura()
+                elif opcion_asignaturas == '4':
+                    eliminar_asignatura()
+                elif opcion_asignaturas == '0':
+                    print('Volviendo al menú anterior...')
+                    break
+                else:
+                    print('Opción ingresada NO corresponde...')
+        elif opcion == '2':
+            print('Ud. ha seleccionado la opción 2')
+        elif opcion == '3':
+            print('Ud. ha seleccionado la opción 3')
+        elif opcion == '4':
+            print('Ud. ha seleccionado la opción 4')
+        elif opcion == '0':
+            print('Saliendo...')
             break
         else:
-            print()
-            print("El valor ingresado no corresponde.")
-            print()
+            print('Opción ingresada NO corresponde...')
+
 
 programa_principal()

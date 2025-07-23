@@ -1,22 +1,19 @@
 # Método de versionamiento de código
 
-# MAJOR: Implica grandes cambios de arquitectura o paradigma de programación
+# MAJOR:    Implica grandes cambios de arquitectura o paradigma de programación
 #           Al realizar estos cambios la nueva versión de la aplicación
-#           no es compatible con la versión anterior
-# MINOR: Implica ajustes o nueva funcionalidad
-#           Sin romper la compatibilidad con la versión anterior
-# PATCH: Correcciones en el código o mejoras de código
+#           no es compatible con la versión anterior.
 
-# Ejemplo de cambio de versión:
-# versión: 1.0.0
+# MINOR:    Implica ajustes en la aploicación o nueva funcionalidad
+#           sin romper la compatibilidad con la versión anterior.
 
-# Si el cambio es MAJOR cambiamos el primer número, quedando 1.0.0
-# Si el cambio es MINOR cambiamos el segundo número, quedando 0.1.0
-# Si el cambio es PATCH cambiamos el tercer número, quedando 0.0.1
+# PATCH:    Correcciones en el código o mejoras de código.
 
 # Historial
-# 09-07-2025: Se define menú principal
+# 09.07.2025: Se define menú principal
 # 14.07.2025: Actualizando el acceso a los menús v1.1.0
+# 19.07.2025: Se agrega metodología para escribir datos en archivos v1.2.0
+# 19.07.2025: Se agrega metodología para modificar datos en archivos v1.3.0
+# 19.07.2025: Se agrega metodología para eliminar datos en archivos v1.4.0
 
-# En AUXILIARES guardamos información que no cambiamos habitualmente.
-version_actual = "1.1.0"
+version_actual = '1.4.0'

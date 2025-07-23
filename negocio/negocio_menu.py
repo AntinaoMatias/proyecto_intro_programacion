@@ -1,9 +1,13 @@
-from auxiliares.opciones_menu import menu_principal
+import auxiliares.opciones_menu as opciones
 
-def mostrar_menu():
-    # Muestra menú principal
-    if menu_principal != None:
-        print("===========================")
-        for clave, valor in menu_principal.items():
-            print(f"[{clave}] {valor}")
-        print("===========================")
+
+def menu_principal():
+    for clave, valor in opciones.menu_principal.items():
+        print(f'[{clave}] {valor}')
+    print()
+
+
+def menu_asignaturas():
+    for clave, valor in opciones.menu_asignaturas.items():
+        print(f'[{clave}] {valor}')
+    print()

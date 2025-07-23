@@ -4,4 +4,4 @@
 
 
 
-asignaturas = ["Química", "Biología", "Matemáticas"]
+asignaturas = ["Química Inorgánica", "Biología", "Matemáticas"]
